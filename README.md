@@ -55,3 +55,14 @@ Project Organization
 --------
 
 <p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+
+Notes: 
+
+1) To setup python environment:
+  Install pyenv
+`pipenv install --python 3.8`
+
+2) Install pipenv dependencies
+`pipenv install --pre pycaret`
+To run mlflow with remote s3 bucket for artifact storage:
+mlflow server --host 0.0.0.0 --port 5000 --serve-artifacts --artifacts-destination s3://enkidupal-ml-bucket/
